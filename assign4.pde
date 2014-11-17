@@ -200,8 +200,8 @@ void keyPressed() {
 /*---------Make Alien Function-------------*/
 void alienMaker(int num,int numInRow){
  for(int i=0; i < num; ++i){
-    int row = i / numInRow;
-    int col = i % numInRow;
+    int row = int(i / numInRow);
+    int col = int(i % numInRow);
  
     int x = 50 + (40*col);
     int y = 50 + (50*row);
